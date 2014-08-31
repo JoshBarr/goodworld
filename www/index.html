@@ -1,16 +1,17 @@
 <!doctype html>
 <html>
 <head>
+    <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="/assets/good.css">
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet" type="text/css">
 </head>
 <body>
     <div class="grid u-middle wrapper">
-        <a href="/">
+        <a href="/" class="column">
             <img src="/assets/images/logo.png" alt="">
         </a>
-        <ul class="[ nav nav--links ] primary-nav u-middle ">
+        <ul class="[ nav nav--links ] column primary-nav u-middle u-hide-small ">
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">FAQ</a></li>
@@ -20,13 +21,20 @@
             <li><a href="#" class="btn btn--small btn-primary">Sign in</a></li>
         </ul>
     </div>
-    <div class="[ block block--deep block-primary ] u-center">
-        <h1 class="wrapper">Social donations via Facebook <br>&amp; Twitter with <strong>#donate</strong></h1>
-        <p class="u-strong">
-            <a href="#" class="btn btn-outline">Sign in with Facebook</a>
-            &nbsp;
-            <a href="#" class="btn btn-outline">Sign in with Twitter</a>
-        </p>
+    <div class="[ block block--deep theme-primary ] ">
+        <div class="wrapper grid">
+            <div class="column full u-center">
+                <h1>
+                    Social donations via Facebook <br>
+                    &amp; Twitter with <strong>#donate</strong>
+                </h1>
+                <p class="u-strong btn-group">
+                    <a href="#" class="btn btn-outline">Sign in with Facebook</a>
+                    <a href="#" class="btn btn-outline">Sign in with Twitter</a>
+                </p>
+            </div>
+        </div>
+
     </div>
     <div class="block u-center">
         <h2 class="brand">How it works</h2>
@@ -36,10 +44,10 @@
         </ul>
 
 
-        <div class="grid wrapper u-center">
-            <div class="one-third column">
+        <div class="grid wrapper ">
+            <div class="medium-one-third column u-center">
                 <p class="two-thirds u-auto">
-                    <span class="circle block--light">Step 1</span>
+                    <span class="circle theme-light">Step 1</span>
                 </p>
                 <h4>
                     Sign up with Good World
@@ -50,18 +58,18 @@ Twitter account to GoodWorld,
 set up your credit card details.
                 </p>
             </div>
-            <div class="one-third column">
+            <div class="medium-one-third column u-center">
                 <p class="two-thirds u-auto">
-                    <span class="circle block--light">Step 2</span>
+                    <span class="circle theme-light">Step 2</span>
                 </p>
 
                 <h4>Comment on a campaign</h4>
                 <p>Reply to your favourite non-profit with #donate to
 give instantly </p>
             </div>
-            <div class="one-third column">
+            <div class="medium-one-third column u-center">
                 <p class="two-thirds u-auto">
-                    <span class="circle block--light">Step 3</span>
+                    <span class="circle theme-light">Step 3</span>
                 </p>
                 <h4>Get the word out</h4>
                 <p>
@@ -75,15 +83,15 @@ give instantly </p>
         </p>
 
     </div>
-    <div class="block ">
-        <h2 class="brand  leading-rule u-center">In the media</h2>
+    <div class="block leading-rule">
+        <h2 class="brand   u-center">In the media</h2>
 
 
-        <div class="wrapper media media--squishy">
-            <div class="media__image one-half">
-                <img src="/assets/images/media/potus.jpg" alt="">
+        <div class="wrapper grid media">
+            <div class="column medium-one-half">
+                <img src="/assets/images/media/potus.jpg" class="full" alt="">
             </div>
-            <div class="media__body ">
+            <div class="column medium-one-half">
                 <h4>
                     President Obama talks with Good World Founder, Dale Nirvani Pfeifer
                 </h4>
@@ -94,23 +102,91 @@ give instantly </p>
                     <a href="#" class="btn btn-tertiary btn--small">Read the full story</a>
                 </p>
 
-                <p class="team small">
-                    <span class="team__image avatar"><img src="/assets/images/dale.jpg" alt=""></span>
-                    <span class="team__name">
-                        <strong>Dale Pfeifer</strong><br>
-                        <span class="team__role">
-                            Founder and CEO
-                        </span>
-                    </span>
-                </p>
+
 
 
             </div>
         </div>
 
-        <div class="prose u-auto column">
-            <div class="leading-rule">
+        <div class="prose column u-auto">
+            <div class="">
+
+
+                <p class="intro trailing-rule">
+                    <span class="team">
+                        <span class="team__image avatar"><img src="/assets/images/dale.jpg" alt=""></span>
+                        <span class="team__name">
+                            <strong>Dale Pfeifer</strong><br>
+                            <span class="team__role">
+                                Founder and CEO
+                            </span>
+                        </span>
+                    </span>
+
+                </p>
+
+
+                <p class="trailing-rule">
+                    <span class="team">
+                        <span class="team__image avatar"></span>
+                        <span class="team__name">
+                            <strong>Someone else</strong><br>
+                            <span class="team__role">
+                                Employee
+                            </span>
+                        </span>
+                    </span>
+                    <span class="team">
+                        <span class="team__image avatar"></span>
+                        <span class="team__name">
+                            <strong>Someone else</strong><br>
+                            <span class="team__role">
+                                Employee
+                            </span>
+                        </span>
+                    </span>
+
+                </p>
+
+                <p class="small">
+
+                    <span class="team ">
+                        <span class="team__image avatar"></span>
+                        <span class="team__name">
+                            <strong>Someone else</strong><br>
+                            <span class="team__role">
+                                Employee
+                            </span>
+                        </span>
+                    </span>
+
+                    <span class="team ">
+                        <span class="team__image avatar"></span>
+                        <span class="team__name">
+                            <strong>Someone else</strong><br>
+                            <span class="team__role">
+                                Employee
+                            </span>
+                        </span>
+                    </span>
+
+                    <span class="team ">
+                        <span class="team__image avatar"></span>
+                        <span class="team__name">
+                            <strong>Someone else</strong><br>
+                            <span class="team__role">
+                                Employee
+                            </span>
+                        </span>
+                    </span>
+
+                </p>
+
+
                 <h3 class="brand">About Good World</h3>
+
+
+
                 <p class="intro">
                     Good World empowers nonprofits to raise money directly on social media. We reduce the barriers to giving to simply writing a comment or tweet.
                 </p>
@@ -118,7 +194,7 @@ give instantly </p>
                     Learn how to create a <a href="#">donatable post</a> or <a href="#">donatable tweet</a>.
                 </p>
                 <blockquote>
-                        If friend posts about a donation, 39% would donate and 68% take the time to learn more.
+                        If friend posts about a donation, 39% would donate and 68% take the time to learn more
                     <cite>
                         Red Cross Poll, 2012
                     </cite>
@@ -160,12 +236,166 @@ give instantly </p>
                 </p>
 
 
+                <h4>Next steps:</h4>
+                <ol class="ol">
+                    <li>Verify your credit card details</li>
+                    <li>Connect GoodWorld to your Facebook or Twitter account</li>
+                    <li>
+                        Donate to your favourite organisations.
+                        <ul>
+                            <li>Donate now through Facebook</li>
+                            <li>Give it a go on Twitter</li>
+                        </ul>
+                    </li>
+                    <li>Change the world!</li>
+                </ol>
+
+                <p>
+                    Things we do to keep you safe:
+                </p>
+
+                <ul class="ul">
+                    <li>Security audit by this awesome security firm.</li>
+                    <li>All your data is sent over industry-standard SSL encryption.</li>
+                </ul>
+
+
+                <h3 class="brand">What's stuff mean?</h3>
+
+
+                <h4>Standard DL</h4>
+                <p>
+                    Here's a definition list explaining some things and what they mean.
+                </p>
+                <dl>
+                    <dt>
+                        Non-profit
+                    </dt>
+                    <dd>
+                        Any organisation registered as a 501c3 <cite>IRS, 2007</cite>
+                    </dd>
+                    <dt>
+                        SSL
+                    </dt>
+                    <dd>
+                        industry standard encryption so your data is safe.
+                    </dd>
+                    <dt>
+                        PCI-DSS
+                    </dt>
+                    <dd>
+                         the credit card industry standards to prevent data lost and theft
+                    </dd>
+                </dl>
+
+                <h4>Inline DL</h4>
+                <dl class="dl--inline">
+                    <dt>Visa</dt>
+                    <dd>Any sort of visa card is sweet</dd>
+                    <dt>MasterCard</dt>
+                    <dd>These guys, too</dd>
+                    <dt>Amex</dt>
+                    <dd>Give freely with your Amex!</dd>
+                </dl>
 
 
 
 
+                <h3 class="brand">Financials</h3>
+                <p>
+                    Oh hey, here's a table, because we might need these at some point.
+                </p>
+
+                <table class="table table--zebra full">
+                    <thead>
+                        <td>Cost</td>
+                        <td>2013</td>
+                        <td>2014</td>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Staffing</td>
+                            <td>$40,000</td>
+                            <td>$56,000</td>
+                        </tr>
+                        <tr>
+                            <td>Hosting and development</td>
+                            <td>$12,000</td>
+                            <td>$15,000</td>
+                        </tr>
+                        <tr>
+                            <td>Tax</td>
+                            <td>$3,000</td>
+                            <td>$3,000</td>
+                        </tr>
+                        <tr>
+                            <td>Marketig and PR</td>
+                            <td>$5,000</td>
+                            <td>$7,000</td>
+                        </tr>
+                    </tbody>
+                </table>
 
 
+                <h4>Split Table</h4>
+
+                <table class="table--split">
+                    <tbody>
+                        <tr>
+                            <td>Amount</td>
+                            <td>$50.00</td>
+                        </tr>
+                        <tr>
+                            <td>Charges</td>
+                            <td>$1.99<br><small>including fifty cents of general tax</small></td>
+                        </tr>
+                        <tr>
+                            <td>Total</td>
+                            <td>$51.99</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p>
+                    Small tables are possible too.
+                </p>
+
+                <table class="table table--zebra full small">
+                    <thead class="">
+                        <td>Cost</td>
+                        <td>2013</td>
+                        <td>2014</td>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Staffing</td>
+                            <td>$40,000</td>
+                            <td>$56,000</td>
+                        </tr>
+                        <tr>
+                            <td>Hosting and development</td>
+                            <td>$12,000</td>
+                            <td>$15,000</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table class="table--split small">
+                    <tbody>
+                        <tr>
+                            <td>Amount</td>
+                            <td>$50.00</td>
+                        </tr>
+                        <tr>
+                            <td>Charges</td>
+                            <td>$1.99 <small>including fifty cents of general tax</small></td>
+                        </tr>
+                        <tr>
+                            <td>Total</td>
+                            <td>$51.99</td>
+                        </tr>
+                    </tbody>
+                </table>
 
             </div>
 
@@ -173,7 +403,7 @@ give instantly </p>
 
     </div>
 
-    <div class="block block--deep block-ui">
+    <div class="block block--deep theme-ui">
         <div class="prose u-auto">
 
             <form action="" class="card">
@@ -230,10 +460,11 @@ give instantly </p>
                         <label for="">Thing A <input class="field--radio" type="radio" name="spam" value="1"></label>
                         <label for="">Thing B <input class="field--radio" type="radio" name="spam" value="1"></label>
                         <label for="">Thing C <input class="field--radio" type="radio" name="spam" value="1"></label>
+                        <label for="" class="is-disabled">Thing D <input class="field--radio" type="radio" name="spam" value="1"></label>
                     </div>
                 </fieldset>
                 <p>
-                    <a href="#" class="btn btn-primary btn--large btn--block">Sign up</a>
+                    <button class="btn btn-primary btn--large btn--block">Sign up</button>
                 </p>
             </form>
         </div>
@@ -242,9 +473,31 @@ give instantly </p>
 
 
 
+    <div class="block block--deep theme-ui">
+        <div class="prose u-auto">
+            <form action="" class="card">
+                <h3 class="brand">Sign in</h3>
+                <fieldset>
+                    <label class="label" for="signin_username">
+                        Email
+                        <input type="text" id="signin_username" placeholder="" class="field field--text">
+                    </label>
+                    <label class="label" for="signin_password">
+                        Password
+                        <input type="password" id="signin_password" placeholder="" class="field field--password">
+                    </label>
+                </fieldset>
+                <p>
+                    <button href="#" class="btn btn-primary btn--large btn--block">Sign in</button>
+                </p>
+            </form>
+        </div>
+    </div>
 
-    <div class="[ block block-night ] u-center">
-        <div class="wrapper">
+
+
+    <div class="[ block theme-night ] ">
+        <div class="wrapper column u-center">
             <h3>
                 <span  class="brand-alt">Good World</span><br>
                 Bottom-up strategies that get noticed
@@ -268,7 +521,7 @@ give instantly </p>
 
             <div class="leading-rule">
                 <div class="grid ">
-                    <div>
+                    <div class="column">
                         <ul class="[ nav nav--links ] small ">
                             <li>
                                 <a href="#">Terms of use</a>
@@ -277,7 +530,7 @@ give instantly </p>
                             <li><a href="#">FAQ</a></li>
                         </ul>
                     </div>
-                    <div>
+                    <div class="column">
                         <p class="small">
                             &copy; 2014 GoodWorld, LLC.
                         </p>
